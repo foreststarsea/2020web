@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>HTML5与CSS3前端开发作业</title>
+	<meta charset="UTF-8">
+</head>
+<style>
+    input{
+        width: 410px;
+        height: 30px;
+    }
+</style>
+<body>
+<fieldset style="margin-left:500px ; width: 446px; height: 547;">
+    <legend style="color: red;font-size: 30px;">学生档案</legend>
+    <form id="testform" method="get" action="#S">
+    姓名：<p></p>
+    <input type="text" name="name1" required placeholder="请输入姓名" autofocus="autofocus" autocomplete="on"/> <span style="color: red;">*</span>
+    <p></p>
+    学号：<p></p>
+    <input type="text" name="no1" required placeholder="请输入学号"/> <span style="color: red;">*</span>
+    <p></p>
+    手机号码：<P></P>
+    <input type="tel"  name="tel1" required placeholder="输入手机号"/> <span style="color: red;">*</span>
+    <p></p>
+    邮箱地址：<P></P>
+    <input  type="email"  name="email1" placeholder="请输入邮箱" /> <span style="color: red;">*</span>
+    <p></p>
+    录取学校：<p></p>
+    <input type= " search"  name="school1" list="schools"/>
+    <datalist id="schools">
+        <option>清华大学</option>
+        <option>北京大学</option>
+        <option>中山大学</option>
+        <option>河北师范大学</option>
+        <option>河北师范大学汇华学院</option>
+        <option>北京航天航空大学</option>
+    </datalist>
+    <p></p>
+    入学成绩：<p></p>
+    <input  type="number"  name="score1"  min="0" max="750" step="1"/>
+    <p></p>
+    入学时间：<p></p>
+    <input type="date" name="datedemo" />
+    <p></p>
+    <input type="submit" value="提交" style="background-color: #DDDDDD;"/>
+</form>
+</fieldset>
+</body>
+</html>
