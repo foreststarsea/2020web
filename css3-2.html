@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            width: 20px; 
+            height: 30px;
+            margin-right: 10px;
+            margin-top: 15px;
+            float: left;
+        }
+        .s2{
+            width: 625px; 
+            height: 108px; 
+            font-size: 20px; 
+            margin-left: 40px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <fieldset style="width: 715px; height: 310px; margin-left: 250px;">
+    <legend style="color: red;font-size: 35px;">网页换肤</legend>
+    <div style="height: 60px; width: 680px; margin-top: 30px; border:solid 2px #A8A8A8 ;margin-left: 15px;" >
+        <div style="background-color:#A8A8A8; margin-left: 5px;" class="s1" onclick="pick" id="d1"> </div>
+        <div style="background-color:#986ED9; " class="s1" onclick="pick" id="d2"></div>
+        <div style="background-color:#FFC9F6; " class="s1" onclick="pick" id="d3"></div>
+        <div style="background-color:#91FFFF; " class="s1" onclick="pick" id="d4"></div>
+        <div style="background-color:#FFFF26; " class="s1" onclick="pick" id="d5"></div>
+        <div style="background-color:#20FF3B; " class="s1" onclick="pick" id="d6"></div>
+    </div>
+ 
+    <p class="s2" id="wz" style="background-color: #A8A8A8;">LocalStorage将数据保存在客户端本地的硬件设备中,即使浏览器被关闭了,该数据仍然存在,下次打开浏览器访问网站时仍然可以继续使用。</p>
+    </fieldset>
+</body>
+<script>
+    
+    var d1 = document.getElementById("d1");
+    var d2 = document.getElementById("d2");
+    var d3 = document.getElementById("d3");
+    var d4 = document.getElementById("d4");
+    var d5 = document.getElementById("d5");
+    var d6 = document.getElementById("d6");
+    var back = document.getElementById("wz");
+
+    var dome = localStorage.getItem('back');
+    if(back.style.backgroundColor!='#A8A8A8'){
+       back.style.backgroundColor=dome;
+    }
+
+    
+    function upit(){
+        if(d1.style.backgroundColor==back.style.backgroundColor){
+            d1.style.marginTop= 10+"px";
+        }
+        if(d2.style.backgroundColor==back.style.backgroundColor){
+            d2.style.marginTop= 10+"px";
+        }
+        if(d3.style.backgroundColor==back.style.backgroundColor){
+            d3.style.marginTop= 10+"px";
+        }
+        if(d4.style.backgroundColor==back.style.backgroundColor){
+            d4.style.marginTop= 10+"px";
+        }
+        if(d5.style.backgroundColor==back.style.backgroundColor){
+            d5.style.marginTop= 10+"px";
+        }
+        if(d6.style.backgroundColor==back.style.backgroundColor){
+            d6.style.marginTop= 10+"px";
+        }
+    }
+    function downit(){
+        if(d1.style.backgroundColor!=back.style.backgroundColor){
+            d1.style.marginTop= 15+"px";
+        }
+        if(d2.style.backgroundColor!=back.style.backgroundColor){
+            d2.style.marginTop= 15+"px";
+        }
+        if(d3.style.backgroundColor!=back.style.backgroundColor){
+            d3.style.marginTop= 15+"px";
+        }
+        if(d4.style.backgroundColor!=back.style.backgroundColor){
+            d4.style.marginTop= 15+"px";
+        }
+        if(d5.style.backgroundColor!=back.style.backgroundColor){
+            d5.style.marginTop= 15+"px";
+        }
+        if(d6.style.backgroundColor!=back.style.backgroundColor){
+            d6.style.marginTop= 15+"px";
+        }
+
+    }
+    var i;
+    d1.onclick=function(){
+        back.style.backgroundColor=d1.style.backgroundColor;
+        localStorage.setItem('back',back.style.backgroundColor); 
+        upit();
+        downit()
+    }
+    d2.onclick=function(){
+        back.style.backgroundColor=d2.style.backgroundColor;
+        localStorage.setItem('back',back.style.backgroundColor); 
+        upit();
+        downit()
+    }
+    d3.onclick=function(){
+        back.style.backgroundColor=d3.style.backgroundColor;
+        localStorage.setItem('back',back.style.backgroundColor); 
+        upit();
+        downit()
+    }
+    d4.onclick=function(){
+        back.style.backgroundColor=d4.style.backgroundColor;
+        localStorage.setItem('back',back.style.backgroundColor); 
+        upit(); 
+        downit()
+    }
+    d5.onclick=function(){
+        back.style.backgroundColor=d5.style.backgroundColor;
+        localStorage.setItem('back',back.style.backgroundColor); 
+        upit();
+        downit()
+    }
+    d6.onclick=function(){
+        back.style.backgroundColor=d6.style.backgroundColor;
+        localStorage.setItem('back',back.style.backgroundColor); 
+        upit();
+        downit();
+    }
+
+
+    upit();
+    downit();
+    
+  
+
+  
+
+</script>
+</html>
