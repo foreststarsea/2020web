@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <script src="js/jquery.js"/></script>
+    <script src="js/bootstrap.js"/></script>
+    <style>
+        * { padding: 0; margin: 0; border: 0; } 
+        .ss{
+            width: 100%;
+            background-image: url('img/banner.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        @media only screen and (min-width: 770px){		
+        .begin{
+            background-color: #282828;
+            width: 100%;
+            height: 45px;
+            border-top: solid 1px gainsboro;
+            border-bottom: solid 1px gainsboro;;
+            color:white;
+        }
+        .begin img{
+            float: left;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 66%;
+        }
+        .yh{
+            margin-top: -12px;
+            width: 100%;
+            height:75px ;
+            background-color: #E0E0E0;
+            font-size: 20px;
+
+
+        }
+        .yh img{
+            float: left;
+            margin-left: 5%;
+            margin-top: 5px;
+        }
+        .yh div{
+            float: left;
+            width: 80px;
+            height: 40px;
+            margin-top: 18px;
+            margin-left: 5%;
+            text-align: center;
+        }
+        .yh div:hover{
+            border-bottom: 5px solid #CC5505;
+            
+        }
+        .ks{
+            display: none;
+        }
+        .ss{
+            height: 446px;
+        }
+        .ss div{
+            float: left;
+            position: absolute;
+            text-shadow:gainsboro 0 0 3px;
+            /* opacity: 0.9; */
+            font-family: STHeiti Light [STXihei] ;
+        }
+        .h1{
+            color: whitesmoke;
+            margin-top: 40px;
+            font-size: 45px;
+            margin-left: 10%;
+        }
+        .hh{
+            display: none;
+        }
+        .h2{
+            color: whitesmoke;
+            font-size: 20px;
+            margin-top: 120px;
+            border-top:1px solid  gainsboro;
+            margin-left: 10%;
+        }
+        .h3{
+            color: whitesmoke;
+            font-size: 20px;
+            margin-top: 170px;
+            margin-left: 10%;
+            border-bottom: 1px solid gainsboro;
+        }
+        .sr{
+            float: left;
+            position: absolute;
+            margin-top: 328px;
+            height: 50px;
+            margin-left: 30%;
+          
+        }
+        .sr1{
+            width: 148px; height: 49px;  background-color: lavender;
+                color: #878789; border-radius: 5px 0px 0px 5px ;
+        }
+        .sr2{
+             height: 49px; width: 128px; background-color: #CB5405; margin-left: 461px; margin-top: -49px; border-radius: 0px 5px 5px 0px ;
+        }
+        .sr input{
+            width: 313px; 
+            height: 49px; 
+            margin-left: 148px;
+            color: #A5A5A4;
+            font-size: 18px;
+        }
+        .sr p{
+            float: left;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-top: 13px;
+        }
+        .bd{
+            width: 100%;
+            height: 2885px;
+            background-color: #DDDDDD;
+        }
+        .sb{
+            margin-top: 30px;
+            float: left;
+            margin-left: 7%;
+
+        }
+        
+        .sb div{
+            float: left;
+            position: absolute;
+            margin-left: 833px;
+            font-size: 20px;
+            color: white;
+            background-color: #14316D;
+            width: 265px;
+            height: 365px;
+        }
+        .sbs{
+            background-image: url('img/Sbanner2.jpg');
+            float: left;
+            position: absolute;
+            width:833px;height: 365px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+        }
+        .p1{
+            font-size: 40px;margin-top: 15px;margin-left: 450px;
+        }
+        .p2{
+            font-size: 20px;margin-top: 5px;margin-left: 450px;
+
+        }
+        .ww{
+            float: left;
+            margin-top: 365px;
+            width: 100%;
+            height: 124px;
+            text-align: center;
+        }
+        .cc{
+            float: left;
+            background-color: white;
+            margin-left: 7%;
+            width: 1098px;
+            height: 1024px;
+        }
+        .cc div{
+            float: left;
+            position: absolute;
+        }
+        .cc p{
+            margin-left: 30px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .cd1{
+            background-image: url('img/hot1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 79%;
+            width: 548px;
+            height: 510px;
+        }
+        .cd1 div{
+            color: white;
+            background-color: #010101;
+            margin-top: 400px;
+            width: 548px;
+            height: 108px;
+        }
+        .cd2{
+            background-image: url('img/hot2.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 79%;
+            width: 548px;
+            height: 512px;
+            margin-top: 512px;
+            
+
+        }
+        .cd2 div{
+            color: white;
+            background-color: #010101;
+            margin-top: 403px;
+            width: 548px;
+            height: 108px;
+        }
+        .cd3{
+            background-image: url('img/hot3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 548px;
+            height: 340px;
+            margin-left: 550px;
+            
+
+        }
+        .cd3 div{
+            color: white;
+            background-color: #010101;
+            width: 548px;
+            height: 83px;
+            margin-top: 256px;
+            opacity: 0.6;
+        }
+        .cd4{
+            background-image: url('img/hot4.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 548px;
+            height: 340px;
+            margin-left: 550px;
+            margin-top: 341px;
+
+        }
+        .cd4 div{
+            color: white;
+            background-color: #010101;
+            width: 548px;
+            height: 83px;
+            margin-top: 256px;
+            opacity: 0.6;
+        }
+        .cd5{
+            background-image: url('img/hot5.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 548px;
+            height: 340px;
+            margin-left: 550px;
+            margin-top: 684px;
+
+        }
+        .cd5 div{
+            color: white;
+            background-color: #010101;
+            width: 548px;
+            height: 83px;
+            margin-top: 256px;
+            opacity: 0.6;
+        }
+        .wz{
+            
+            float: left;
+            width: 100%;
+            height: 600px;
+            margin-top: -100px;
+            text-align: center;
+            background-image: url('img/back.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        
+        }
+        .sj{
+            margin-top: 120px;
+        }
+        .dd{
+            float: left;
+            
+            margin-top: -380px;
+            margin-left: 7%;
+            width: 1098px;
+            height: 1230px;
+            
+
+        }
+        .dd div{
+            float: left;
+            position: absolute;
+
+        }
+        .dd1{
+            width: 500px;
+            height: 349px;
+            background-image: url('img/mission1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-bottom: 5px solid white;
+            
+            
+        }
+        .dd2{
+            width: 598px;
+            height: 349px;
+            background-color: #1C5080;
+            margin-left: 500px;
+            opacity: 0.8;
+            border-bottom: 5px solid white;
+            text-align: center;
+            color: white;
+            
+        }
+        .dd2p1{
+            font-size: 25px; margin-top: 80px;
+        }
+        .dd2p2{
+            display: none;
+        }
+        .dd2p3{
+            font-size: 16px; text-align: left; margin-top: 20px; margin-left: 30px; margin-right: 30px; text-indent: 10px; line-height:40px;
+
+        }
+        .dd3{
+            width: 1098px;
+            height: 474px;
+            margin-top: 349px;
+           
+            background-image: url('img/mission2.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-bottom: 5px solid white;
+            
+        }
+        .dd4{
+            width: 1098px;
+            height: 397px;
+            margin-top: 823px;
+            background-color: #1C5080;
+
+        }
+        .dd4 div{
+            width: 180px;
+            height: 180px;
+            float: left;
+            position: absolute;
+            background-image: url('img/rorate.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-top: 50px;
+
+        }
+        .dd4 img{
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+        .dd4 p{
+            font-size: 20px;
+            color: white;
+            text-align: center;
+           
+            margin-top: 10px;
+        }
+        .dd4 span{
+            color: white;
+            font-size: 16px;
+            float: left;
+            position: absolute;
+            margin-top: 280px;
+            text-align: center;
+        }
+        .end{
+            width: 100%;
+            height: 824px;
+            float: left;
+            margin-top: -10px;
+            color: gainsboro;
+            background-color:#010101 ;
+        }
+        .end div{
+            margin-top: 50px;
+        }
+        .end img{
+            float: left;
+            position: absolute;
+        }
+        .end p{
+            float: left;
+            position: absolute;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+        .end span{
+            font-size: 16px;
+            float: left;
+            position: absolute;
+            line-height: 30px;
+        }
+        .sbi{
+            display: none;
+        }
+        .p3{
+            display: none;
+        }
+        .cmd{
+            display: none;
+        }
+        .sj1{
+            display: none;
+        }
+        .dd4d{
+            display: none;
+        }
+        .dd4d1{
+            display: none;
+        }
+        .dd4d2{
+            display: none;
+        }
+        .dd4d3{
+            display: none;
+        }
+        .end2{
+            display: none;
+        }
+        
+        }
+
+        @media only screen and (max-width: 770px){	
+            .begin{
+                display: none;
+            }
+            .yh{
+                width: 100%;
+                height: 60px;
+                
+            }
+            .yh img{
+                width: 30%;
+                height: 85%;
+                margin-left: 5%;
+                margin-top: 5px;
+            }
+            .yh div{
+                display: none;
+            }
+            .kt{
+                float: left;
+                position: absolute;
+                margin-left:56% ;
+                margin-top: 16px;
+                width: 25%;
+                height: 80%;
+            }
+            .kt p{
+                width: 21%;
+                border-bottom: 3px solid black;
+            }
+            .ks{
+                float: left;
+                position: absolute;
+                margin-left: 30%;
+                text-align: center;
+                background-color: #E8410A;
+                width: 20%;
+                height: 12%;
+                color: white;
+                border-radius: 8px;
+                font-size: 160%;
+                margin-top: 10px;
+            }
+            .ks p{
+                margin-top: 2%;
+            }
+            .ss{
+                height: 300px;
+            }
+            .h1{
+                float: left;
+                position: absolute;
+                color: white;
+                font-size: 250%;
+                margin-top: 8%;
+                margin-left: 5%;
+            }
+            .hh{
+                float: left;
+                position: absolute;
+                color: white;
+                font-size: 150%;
+                margin-top: 18%;
+                margin-left: 5%;
+
+            }
+            .h2{display: none;}
+            .h3{display: none;}
+            .sr{
+            float: left;
+            position: absolute;
+            margin-top: 30%;
+            height: 50px;
+            margin-left: 10%;
+            border-radius: 5px;
+            
+            box-shadow: black 0 0 0 5px;
+            
+        }
+
+        .sr1{
+            width: 106px; height: 50px;  background-color: lavender;
+                color: #878789; border-radius: 5px 0px 0px 5px ;
+        }
+        .sr2{
+             height: 50px; width: 110px; background-color: #CB5405; margin-left: 382px; margin-top: -50px; border-radius: 0px 5px 5px 0px ;
+        }
+        .sr input{
+            float: left;
+            position: absolute;
+            width: 280px; 
+            height: 50px; 
+            margin-top: -50px;
+            margin-left: 106px;
+            color: #A5A5A4;
+            font-size: 18px;
+        }
+        .sr p{
+            float: left;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 13px;
+        }
+        .sb{
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            margin-top: 0px;
+            float: left;
+            position: absolute;
+            border-top: 12px solid #F5F5F5 ;
+            border-bottom: 12px solid #F5F5F5;
+        }
+        .sbi{
+            float: left;
+            position: absolute;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .sb div{
+          display: none;
+        }
+        .sbs{
+           
+            float: left;
+            position: absolute;
+            width:833px;height: 365px;
+
+        }
+        .p1{
+
+            color: #2B5880;
+            font-size: 180%;
+            margin-left:20% ;
+            margin-top: 4%;
+        }
+        .p2{
+
+            color: #8C8C8C;
+            margin-left:20% ;
+            font-size: 120%;
+        }
+        .p3{
+           
+            float: left;
+            position: absolute;
+            margin-left:56%; 
+            margin-top: -10%;
+            font-size: 180%; 
+            border:1px solid #8C8C8C; border-radius: 8px; width: 140px; height: 50px; 
+            text-align: center;
+        }
+        .ww{
+            float: left;
+            margin-top: 200px;
+            width: 90%;
+            margin-left: 5%;
+            height: 70px;
+            border-bottom: 1px solid #8C8C8C;
+            
+        }
+        .rm{
+            display: none;
+        }
+        .ww p{
+            width: 200px;
+            height: 40px;
+            text-align: center;
+           
+            border-left: 5px solid salmon;
+        }
+        .cd1{
+            float: left;
+            position: absolute;
+            background-image: url('img/hot1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 79%;
+            width: 90%;
+            height: 510px;
+            margin-left: 5%;
+            margin-top:280px ;
+        }
+        .cd1 div{
+            color: white;
+            background-color: #010101;
+            margin-top: 400px;
+            width: 100%;
+            height: 108px;
+        }
+        .cd1 p{
+            margin-left: 5%;
+        }
+        .cd2{
+            float: left;
+            position: absolute;
+            background-image: url('img/hot2.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 79%;
+            width: 90%;
+            height: 512px;
+            margin-left: 5%;
+            margin-top: 820px;
+            
+
+        }
+        .cd2 p{
+            margin-left: 5%;
+        }
+        .cd2 div{
+            color: white;
+            background-color: #010101;
+            margin-top: 403px;
+            width: 100%;
+            height: 108px;
+        }
+        .cd3{
+            display: none;
+        }
+        .cd4{
+            display: none;
+        }
+        .cd5{
+            display: none;
+        }
+        .cdm{
+
+            float: left;
+            position: absolute;
+            margin-left:40%; 
+            margin-top: 1370px;
+            font-size: 150%; 
+            border:1px solid #8C8C8C; border-radius: 8px; width: 160px; height: 40px; 
+            text-align: center;
+
+        }
+        .cdm p{
+            color: #8C8C8C;
+            float: left;
+            position: absolute;
+            margin-left: 15%;
+            margin-top: 2%;
+            
+        }
+        .cdm img{
+            float: left;
+            position: absolute;
+            margin-left: 28%;
+            margin-top: 3%;
+
+        }
+        .kwz{
+            float: left;
+            
+            margin-top: 1160px;
+            
+            width: 100%;
+          
+           
+            border-top: 8px solid whitesmoke;
+
+        }
+        .wz{
+            float: left;
+            
+            margin-top: 20px;
+            
+            width: 90%;
+            margin-left: 5%;
+            height: 50px;
+            border-bottom: 1px solid #8C8C8C;
+            
+        }
+     
+        .wz p{
+            float: left;
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+           
+           
+        }
+        .sj{
+            border-left: 5px solid salmon;
+            
+        }
+        .sj1{
+            margin-left: 90px;
+          
+            font-size:200% ;
+
+        }
+        .sj2{
+            margin-top: 2%;
+            margin-left: 200px;
+        }
+        .dd{
+            float: left;
+            width: 100%;
+            height: 1230px;
+            background-image: url('img/back.png');
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+        }
+        .dd div{
+            float: left;
+            position: absolute;
+
+        }
+        .dd1{
+            width: 90%;
+            height: 300px;
+            margin-left: 5%;
+            margin-top: 50px;
+            background-image: url('img/mission1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-bottom: 5px solid white;
+            
+            
+        }
+        .dd2p1{
+            display: none;
+        }
+        .dd2p2{
+            margin-top: 380px;
+            text-align: center;
+            
+        }
+        .dd2p3{
+            font-size: 90%;
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-indent: 10px;
+            line-height: 25px;
+
+            
+        }
+
+        .dd3{
+            width: 90%;
+            height: 300px;
+            margin-left: 5%;
+            margin-top: 520px;
+           
+            background-image: url('img/mission2.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-bottom: 5px solid white;
+            
+        }
+        .d4d{
+            display: none;
+        }
+        .dd4{
+            width: 100%;
+        }
+        .dd4 div{
+            float: left;
+            position: absolute;
+        }
+        .dd4 p{
+            float: left;
+            position: absolute;
+            
+        }
+
+        .dd4d{
+            
+            margin-top: 840px;
+           margin-left: 40%;
+            font-size: 120%;
+
+        }
+        .dd4d1{
+            width: 90%;
+            margin-top: 900px;
+            margin-left: 5%;
+            border-bottom: 1px solid #8C8C8C;
+            
+            
+        }
+        .dd4d1 img{
+            margin-left: 20%;
+            margin-bottom: 30px;
+        }
+        .dd4d1 p{
+            margin-top: -90px;
+             margin-left: 40%;
+            
+        }
+        .dd4d2{
+            height: 80px;
+            width: 90%;
+            margin-top: 1000px;
+            
+            margin-left: 5%;
+            border-bottom: 1px solid #8C8C8C;
+            
+        }
+        .dd4d2 p{
+            margin-top: -90px;
+             margin-left: 40%;
+            
+        }
+        .dd4d2 img{
+            margin-left: 20%;
+            margin-bottom: 30px;
+        }
+
+        .dd4d3{
+            width: 90%;
+            margin-top: 1100px;
+            
+            margin-left: 5%;
+            border-bottom: 1px solid #8C8C8C;
+            
+        }
+        .dd4d3 img{
+            margin-left: 20%;
+            margin-bottom: 30px;
+        }
+        .dd4d3 p{
+            margin-top: -70px;
+             margin-left: 40%;
+            
+        }
+        .d4s0{
+           display: none;
+        }
+        .end{
+            display: none;
+        }
+        .end2{
+            float: left;
+            position: absolute;
+            margin-top: 2600px;
+            height: 330px;
+            width: 100%;
+            background-color: #010101;
+            color: whitesmoke;
+
+        }
+        .end2 p{
+            text-align: center;
+        } 
+
+        }
+    </style>
+
+</head>
+<body>
+        <div class="begin">
+            <img src="img/tell.png"/>
+            <p style="float: left;; margin-top: 12px; margin-left: 70%; position: absolute;">400-868-8082</p>
+            <p style="float: left; margin-top: 12px; margin-left: 85%; position: absolute;">请登录&nbsp|&nbsp注册</p>
+        </div>
+        <div class="yh">
+            <img src="img/logo.png"/>
+            <span class="ks"><p>快速定制</p></span>
+            <span class="kt" > <p></p> <p></p> <p></p></span>
+            <div style="margin-left: 8%;">首页</div>
+            <div>热门路线</div>
+            <div>签证推荐</div>
+            <div>使命愿景</div>
+        </div>
+        <div class="ss">
+            <div class="h1" >悠游古欧洲&nbsp&nbsp&nbsp遍览德法瑞意</div>
+            <div class="hh">全程升级热早+1晚五星酒店</div>
+            <div class="h2" ><p style="margin-top: 10px;">巴黎卢浮宫、塞纳河游船、凡尔赛宫 </p></div>
+            <div class="h3" ><p style="margin-bottom: 10px;">少女峰、大运河游船、金色列车，西庸城堡</p></div>
+            <div class="sr">
+                <div  class="sr1" ><img src="img/position.png"/ style=" float: left; margin-left: 20px;
+                margin-top: 13px;"> <p>目的地</p></div>
+                <input  type="search" value="&nbsp&nbsp&nbsp|&nbsp&nbsp日本&nbsp&nbsp美国&nbsp&nbsp英国&nbsp&nbsp地中海"/>
+                <div class="sr2" >
+                <img src="img/search.png"/ style="float: left;margin-left: 45px; margin-top: 10px;"></div>  
+            </div>
+         </div>
+         <div class="bd">
+             <div class="sb">
+                 <img src="img/carH.png" class="sbi">
+                 <span class="sbs">
+                    <p class="p1" >机场接送&nbsp省钱省心</p>
+                    <p  class="p2" >提供上海、苏州、无锡各市</p>
+                    <p  class="p2" >往返机场、码头接送服务，更有包车服务</p>
+                    <span class="p3" ><p style="margin-top: 3%;">查看详情</p></span>
+                 </span>
+                 
+                 
+                 <div>
+                     <img src="img/car.png" style="margin-left: 80px; margin-top: 80px; font-size: 28px;">
+                     <p style="margin-left: 75px; margin-top: 10px; font-size: 28px;">车辆接送</p>
+                     <p style="margin-left: 46px; margin-top: 40px; font-size: 28px; border:1px solid white; border-radius: 8px; width: 180px; height: 45px; text-align: center;">查看详情</p>
+                </div>
+             </div>
+             <div class="ww">
+                 <p style="font-size: 30px; margin-top: 15px;">热 门 线 路</p>
+                 <p style="font-size: 15x; " class="rm">Popular tourist routes</p>
+             </div>
+             <div class="cc">
+                 <div class="cd1">
+                     <div>
+                         <p>海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
+                         <p style="font-size: 25px;">¥2580</p>
+                         <p style="margin-top: -38px; margin-left: 105px;">/人起</p>
+                    </div>
+                     
+                 </div>
+                 <div class="cd2">
+                     <div>
+                         <p>德法意瑞欧洲4国，ABCD任意路线由您挑选</p>
+                         <p style="font-size: 25px;">¥7999</p>
+                         <p style="margin-top: -38px; margin-left: 105px;">/人起</p>
+                     </div>
+                 </div>
+                 <div class="cdm"><p>查看更多</p><img src="img/hotR.png"></div>
+                 <div class="cd3">
+                     <div>
+                         <p>曼谷+芭提亚 国际五星，赠送2220大礼包、绝无自费</p>
+                         <p style="font-size: 25px; margin-top: -10px;">¥2799</p>
+                         <p style="margin-top: -40px; margin-left: 105px;">/人起</p>
+                     </div>
+                 </div>
+                 <div class="cd4">
+                    <div>
+                        <p>日本本州游 樱花、寿司、温泉、美食</p>
+                        <p style="font-size: 25px; margin-top: -10px;">¥5399</p>
+                         <p style="margin-top: -40px; margin-left: 105px;">/人起</p>
+                    </div>
+                 </div>
+                 <div class="cd5">
+                    <div>
+                        <p>斯里兰卡7天6晚全景游 保证入住两晚香格里拉</p>
+                        <p style="font-size: 25px; margin-top: -10px;">¥7999</p>
+                         <p style="margin-top: -40px; margin-left: 105px;">/人起</p>
+                    </div>
+                 </div>
+                                  
+
+             </div>
+             <div class="kwz">
+             <div class="wz">
+                <p style="font-size: 30px;  " class="sj" >使命与愿景</p>
+                <p class="sj1">:</p>
+                <p style="font-size: 15x; " class="sj2">让旅游回归本质，体验纯粹旅游</p>
+            </div>
+            </div>
+            <div class="dd">
+                <div class="dd1">
+                    
+                </div>
+                <div class="dd2">
+                    <p class="dd2p1">服务理念及优势</p>
+                    <p class="dd2p2">--服务理念--</p>
+                    <p class="dd2p3">“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案，陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验，英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</p>
+                </div>
+                <div class="dd3"></div>
+                <div class="dd4">
+                    
+                    <div style="margin-left: 110px;" class="d4d">
+                        <img src="img/icon1.png">
+                        <p>品质行程</p>
+                    </div>
+                    <div style="margin-left: 450px;" class="d4d">
+                        <img src="img/icon2.png" style="margin-top: 40px;
+                        margin-left: 65px;">
+                        <p>品质消费</p>
+                    </div>
+                    <div style="margin-left: 790px;" class="d4d">
+                        <img src="img/icon3.png" style="margin-top: 40px;
+                        margin-left: 65px;">
+                        <p style="margin-top: 20px;">品质小团</p>
+                    </div>
+               
+                    
+                    <div class="dd4d">--服务优势--</div>
+                    <div class="dd4d1"> 
+                        <img src="img/icon11.png" alt=""> 
+                        <p>旅游达人精心设计、基于口碑反复打磨，<br>告别人山人海鸡肋景点,<br>全网最好，敢跟任何产品比</p>
+                    </div>
+                    <div class="dd4d2"> <img src="img/icon22.png" alt=""><p>不推自费，<br>不进垃圾购物点和伪景点</p> </div>
+                    <div class="dd4d3"> <img src="img/icon33.png" alt=""> <p>独立成团不散拼，<br>只跟亲朋好友一起玩，每天发团</p></div>
+
+                    <span class="d4s0" style="margin-left: 60px; ">旅游达人精心设计、基于口碑反复打磨，<br>全网最好，敢跟任何产品比</span>
+                    <span class="d4s0" style="margin-left: 460px; ">不推自费，<br>不进垃圾购物点和伪景点</span>
+                    <span class="d4s0" style="margin-left: 780px; ">独立成团不散拼，<br>只跟亲朋好友一起玩，每天发团</span>
+                </div>
+            
+            </div>
+
+         </div>
+         <div class="end">
+             <div>
+                 <p>合作伙伴</p>
+                 <img src="img/xiecheng.png" style="margin-left: 200px;" />
+                 <img src="img/feizhu.png" style="margin-left: 340px;" />
+                 <img src="img/quna.png" style="margin-left: 480px;" />
+                 <img src="img/suzhou.png" style="margin-left: 620px;" />
+                 <span style="margin-left: 230px; margin-top: 50px;">携程网 </span>
+                 <span style="margin-left: 370px;  margin-top: 50px;">阿里飞猪
+                 </span>
+                 <span style="margin-left: 510px;  margin-top: 50px;">去哪儿
+                </span>
+                <span style="margin-left: 620px;  margin-top: 50px;">苏州旅游局
+                </span>
+                 
+
+             </div>
+             <p style="margin-top:100px;">热门位置</p>
+             <span style="margin-left: 200px;  margin-top: 100px; margin-right: 80px;">韩国&nbsp日本&nbsp  菲律宾&nbsp  越南 &nbsp 老挝 &nbsp 柬埔寨&nbsp  泰国&nbsp  马来西亚&nbsp  新加坡 &nbsp 印度尼西亚&nbsp 印度 &nbsp 斯里兰卡&nbsp  土耳其 &nbsp 阿联酋&nbsp 西班牙 &nbsp意大利&nbsp  希腊 &nbsp 法国 &nbsp 比利时 &nbsp荷兰 &nbsp 英国 &nbsp瑞士&nbsp 奥地利&nbsp  德园 &nbsp 匈牙利 &nbsp 俄罗斯 &nbsp捷克&nbsp  芬兰 &nbsp 葡萄牙&nbsp  冰岛&nbsp 美国 &nbsp 加拿大 &nbsp巴西 &nbsp 阿根廷 &nbsp 澳大利亚 &nbsp 新西兰</span>
+             <div>
+
+             </div>
+             <p style="margin-top:200px;">主题服务</p>
+             <span style="margin-left: 200px;  margin-top: 200px; margin-right: 80px;">海岛度假 &nbsp历史文化 &nbsp探索冒险 &nbsp美食购物 &nbsp都市生活 &nbsp海外游学 &nbsp邮轮度假 &nbsp蜜月摄影 &nbsp亲子乐园</span>
+             <div>
+
+             </div>
+             <p style="margin-top:300px;">友情链接</p>
+             <span style="margin-left: 200px;  margin-top: 300px; margin-right: 80px;">马峰窝&nbsp 穷游&nbsp booking&nbsp 苏州旅游局&nbsp 驴友网&nbsp 吾爱全球签证中心 &nbsp酒店团购 &nbsp携程旅游攻略 &nbsp天巡直航在线 &nbsp满天飞旅游网&nbsp 中国控华网&nbsp 澳乐网 &nbsp背包免旅府行程&nbsp
+
+                出境旅游&nbsp 国际酒店&nbsp  广州旅行社 &nbsp出境旅游 &nbsp517旅行 &nbsp花生游 &nbsp家园网&nbsp 海外婚礼
+                </span>
+             <div  style="margin-top:500px; border-top: 1px solid gainsboro; ">
+                <p style="margin-top: 50px; margin-left: 30%;">2020 &nbsp@苏州英华国际旅游有限公司 版权所有</p>
+
+             </div>
+             
+
+         </div>
+         <div class="end2">
+             <p style="margin-top: 100px;">苏ICP备号、2020</p>
+             <p>@苏州英华国际旅游有限公司 版权所有</p>
+             <p>技术支持 杭州科技</p>
+
+         </div>
+
+
+    
+</body>
+</html>
